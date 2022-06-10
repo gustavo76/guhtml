@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrinho</title>
+	<link rel="stylesheet" href="Biblioteca/bootstrap.min.css">
+	<link rel="stylesheet" href="Biblioteca/style02.css">
+	<link rel="stylesheet" href="Biblioteca/style03.css">
+
+</head>
+<style>
+	#header {
+		width: 200px;
+		height: 180px;
+	}
+</style>
+
+<body>
+
+	<div class="row justify-content-center">
+		<picture id="centro" style="margin-top: 10px;">
+			<a href="index.html">
+				<img src="imagem/Videomania.jpg" alt="img-fluid" id="header">
+			</a>
+		</picture>
+	</div> 
+
+	<nav style="text-align: center; margin-top: 15px;">
+		<button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+			<a style="text-decoration: 0px; color: black;" href="carrinho.html">Carrinho de compras</a>
+		</button>
+		
+		<button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+			<a style="text-decoration: 0px; color: black;" href="cep.html">Verificar Cep</a>
+		</button>
+
+		<button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+			<a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="Fale.html">Fale Conosco</a>
+		</button>
+	</nav>
+
+	<div class="container shadow">
+		<div id="itens"> </div>
+		<div class="branca">Total: <span id="total"></span> </div>
+
+		<button type="button" class="btn btn-outline-danger" onclick=" localStorage.clear(); location.reload();"> Limpar
+		carrinho </button>
+		<br><br>
+
+	</div>
+	<div>
+		<button onclick="pegarValor()" name="bt" id="bt" style="margin-left: 70px;"  class="btn btn-outline-secondary">
+		<a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="FormaPagamento.html">Forma De Pagamento</a>
+		</button>
+	</div>
+	<!------------------------------------->
+	<!-- <div class="container">
+		<div class="row-8">
+			<br>
+			<div class="col-4">
+				<input type="text" class="form-control" placeholder="Total" aria-label="First name" disabled>
+			</div>
+
+			<div class="form-check col-4">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="Default1" onclick="if(document.getElementById('av').disabled == true){
+					document.getElementById('av').disabled = true, document.getElementById('card').disabled = true, document.getElementById('card').value = ''
+				}">
+				<label style="color: white;" class="form-check-label" for="flexRadioDefault1">
+					A Vista
+				</label>
+			</div>
+			<br>
+		</div>
+
+		<div class="col-4">
+			<br>
+			<select class="form-select" aria-label="Default select example" disabled>
+				<option selected>Quantidade de parcelas</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+		</div>
+		<div class="form-check col-4">
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="Default2" onclick="if(document.getElementById('card').disabled = true){
+				document.getElementById('card').disabled = false,
+				document.getElementById('av').disabled = true
+			}">
+			<label style="color: white;" class="form-check-label" for="flexRadioDefault2">
+				Cartão
+			</label>
+		</div>
+		<br>
+	</div> -->
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

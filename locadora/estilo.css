@@ -1,0 +1,9 @@
+div.container{
+  margin-top: 300px;
+} 
+body{
+  background-color: red;
+}
+div.shadow{
+  background-color: rgba(0, 0, 0, 0.897) !important;
+}

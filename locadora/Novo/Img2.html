@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WandaVision</title>
+    <link rel="stylesheet" href="../Biblioteca/bootstrap.min.css">
+    <link rel="stylesheet" href="../Biblioteca/style02.css">
+    <link rel="stylesheet" href="../Biblioteca/Zoom.css">
+</head>
+<body>
+    <div class="container shadow-lg m-5">
+        <div class="row offset-2">
+            <div class="col-4 pt-5 pb-5" id="card1">
+                <picture>
+                    <img width="200px" height="300px" src="../imagem/WandaVision.png" alt="img-fluid">
+                </picture>
+            </div>
+            <div class="col-6 pt-5 pb-5 text-center">
+                <h3 style="color: White;">WandaVision</h3>
+                <p style="color: White;">
+                    Três semanas após os eventos de Avengers: Endgame (2019), Wanda Maximoff e Visão estão vivendo uma vida suburbana idílica na cidade de Westview, no estado de New Jersey, tentando esconder suas verdadeiras identidades. À medida que começam a entrar nas novas décadas, o casal suspeita que as coisas não são o que parecem.
+                </p>
+                <div style="color: White;" align="center">
+                    WandaVision <strong>R$ 14,00</strong><br>
+                    <br>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+                    <button class="btn btn-outline-success" type="button" id="adicionar2" id="produto2" onclick="AddCarrinho('WandaVision', document.getElementById('qtd2').value, '14.00', 2)"> Comprar </button>
+                </div>
+                <p align="center" >
+                    <button class="btn btn-outline-primary"  style="margin-top: 12px;">
+                    <a href="../index.html" style="text-decoration: 0px;"> Voltar </a>
+                    </button>
+                </p>	
+                        
+                <script>
+                    function AddCarrinho(produto, qtd, valor, posicao)
+                    {
+                        localStorage.setItem("produto" + posicao, produto);
+                        localStorage.setItem("qtd" + posicao, qtd);
+                        valor = valor * qtd;
+                        localStorage.setItem("valor" + posicao, valor);
+                        alert("Produto adicionado ao carrinho!");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../Biblioteca/Zoom.js"></script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Strange</title>
+    <link rel="stylesheet" href="../Biblioteca/bootstrap.min.css">
+    <link rel="stylesheet" href="../Biblioteca/style02.css">
+    <link rel="stylesheet" href="../Biblioteca/style03.css">
+    <link rel="stylesheet" href="../Biblioteca/Zoom.css">
+    <script src="../Biblioteca/Script02.js"></script>
+   
+</head>
+<body>
+    <div class="container shadow-lg m-5">
+        <div class="row offset-2">
+            <div class="col-4 pt-5 pb-5" id="card1">
+                <picture>
+                    <img width="200px" height="300px" src="../imagem/Doctor Strange_(Madness).png" alt="img-fluid">
+                </picture>
+            </div>
+            <div class="col-6 pt-5 pb-5 text-center">
+                <h3 style="color: White;">Doctor Strange</h3>
+                <p style="color: White;">
+                    O aguardado filme trata da jornada do Doutor Estranho rumo ao desconhecido. Além de receber ajuda de novos aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e perigosas do Multiverso para enfrentar um novo e misterioso adversário.
+                </p>
+           
+                <div style="color: White;" align="center">
+                    Doctor Strange <strong>R$ 12,00</strong><br>
+                    <br>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button class="btn btn-outline-success" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Doctor Strange', document.getElementById('qtd1').value, '12.00', 1)"> Comprar </button>
+                </div>
+                <p align="center" >
+                    <button class="btn btn-outline-primary" style="margin-top: 12px; color: blue !important;">
+                    <a href="../index.html" style="text-decoration: 0px;"> Voltar </a>
+                    </button>
+                </p>	
+                        
+                <script>
+                    function AddCarrinho(produto, qtd, valor, posicao)
+                    {
+                        localStorage.setItem("produto" + posicao, produto);
+                        localStorage.setItem("qtd" + posicao, qtd);
+                        valor = valor * qtd;
+                        localStorage.setItem("valor" + posicao, valor);
+                        alert("Produto adicionado ao carrinho!");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../Biblioteca/Zoom.js"></script>
+
+</html>

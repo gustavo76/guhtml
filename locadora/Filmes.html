@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Filmes</title>
+    <link rel="stylesheet" href="Biblioteca/bootstrap.min.css">
+    <link rel="stylesheet" href="Biblioteca/style02.css">
+    <link rel="stylesheet" href="Biblioteca/style03.css">
+    <script src="script.js"></script>
+    <script src="Login.js"></script>
+    <script src="Biblioteca/Script02.js"></script>
+</head>
+<style>
+    #header {
+        width: 200px;
+		height: 180px;
+    }
+</style>
+
+<body onload="rj(),timer()">
+   
+    <h2 style="color: azure; text-align: center; margin-top: 10px;">Tempo do Site:</h2>
+    <div id="timer" style="color:azure; font-size: 40px; text-align: center;"></div>
+    
+
+        <div class="row-1 justify-content-end">
+            <input disabled type="text" class="form-control m-5" id="maria" style="width: 320px;">
+        </div>
+
+    <!----------------------------------------->
+    <div class="row justify-content-center">
+        <picture id="centro">
+            <img src="imagem/Videomania.jpg" alt="img-fluid" id="header">
+        </picture>
+    </div>
+
+    <nav style="text-align: center; margin-top: 15px;">
+       
+            <button name="bt" id="bt" style="margin-right: 15px;" class="btn btn-outline-secondary">
+                <a style="text-decoration: 0px; color: black;" href="carrinho.html">Carrinho de compras</a>
+            </button>
+            
+            <button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+                <a style="text-decoration: 0px; color: black;" href="cep.html">Verificar Cep</a>
+            </button>
+
+            <button name="bt" id="bt" style="margin-right: 15px;"  class="btn btn-outline-secondary">
+                <a style="color: black; text-decoration: 0px;" style="text-decoration: 0px;" href="Fale.html">Fale Conosco</a>
+            </button>
+
+    </nav>
+    <div class="container-fluid mt-4" style="margin-left: 1px;" id="centro">
+        <div class="row justify-content-center">
+            <div class="col-12 offset md-5">
+                <div class="shadow p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <div class="align-items-start">
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5>Doctor Strange</h5>
+                                    <picture>
+                                        <a href="Novo/Img1.html">
+                                            <img src="imagem/Doctor Strange_(Madness).png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+                                </div>
+                                <div class="col-3">
+                                    <h5>WandaVision</h5>
+                                    <picture>
+                                        <a href="Novo/Img2.html">
+                                            <img src="imagem/WandaVision.png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+
+                                </div>
+                                <div class="col-3">
+                                    <h5>Stranger Things</h5>
+                                    <picture>
+                                        <a href="Novo/Img3.html">
+                                            <img src="imagem/Stranger_Things.png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+
+                                </div>
+                                <div class="col-3">
+                                    <h5>Se beber...</h5>
+                                    <picture>
+                                        <a href="Novo/Img4.html">
+                                            <img src="imagem/Beber_naocase.png" alt="img-fluid">
+                                        </a>
+                                    </picture>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script src="Biblioteca/javaTimer.js"></script>
+
+</html>
